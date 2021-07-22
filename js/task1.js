@@ -38,7 +38,7 @@ if (num < 49) {
         break;
 } */
 
-//УСЛОВИЯ И ЦИКЛЫ
+// ЦИКЛЫ
 
 
 
@@ -47,10 +47,71 @@ if (num < 49) {
     num++;
 } */
 
-let num = 50;
+/* let num = 50; */
 
-do {
+/* do {
     console.log(num);
     num++;
 }
-while (num < 55);
+while (num < 55); */
+/* 
+for (let i = 1; i < 9; i++) {
+    if (i === 6) { */
+        /* break; */
+/*         continue;
+    }
+    console.log(i);
+} */
+
+//сам.раб
+
+/* do {
+    const a = prompt('Один из последних просметренных фильмов?', ''),
+          b = prompt('На сколько оцените его?', '');
+          num++;
+    if (a != null && b != null && a != '' && b != '' && a.length < 50) {
+        personalMovieDB.movies[a] = b;
+        console.log('done');
+    } else {
+        console.log('error');
+        num--;
+    }
+}
+while(num < 2); */
+
+let num = 20;
+
+function showFirstMessage(text) {
+    console.log(text);
+    console.log(num);
+}
+
+showFirstMessage("Hello world!");
+console.log(num);
+
+/* function calc(a, b) {
+    return (a + b);
+}
+
+console.log(calc(4, 3));
+console.log(calc(8, 3));
+console.log(calc(10, 8)); */
+
+function ret() {
+    let num = 50;
+
+    //
+
+    return num;
+}
+
+const anotherNum = ret();
+console.log(anotherNum);
+
+const logger = function() {
+    console.log("Hello");
+};
+
+logger();
+
+const calc = (a, b) => {return a + b};
