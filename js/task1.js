@@ -79,7 +79,7 @@ for (let i = 1; i < 9; i++) {
 }
 while(num < 2); */
 
-let num = 20;
+/* let num = 20;
 
 function showFirstMessage(text) {
     console.log(text);
@@ -87,7 +87,7 @@ function showFirstMessage(text) {
 }
 
 showFirstMessage("Hello world!");
-console.log(num);
+console.log(num); */
 
 /* function calc(a, b) {
     return (a + b);
@@ -97,7 +97,7 @@ console.log(calc(4, 3));
 console.log(calc(8, 3));
 console.log(calc(10, 8)); */
 
-function ret() {
+/* function ret() {
     let num = 50;
 
     //
@@ -114,4 +114,31 @@ const logger = function() {
 
 logger();
 
-const calc = (a, b) => {return a + b};
+const calc = (a, b) => {return a + b}; */
+
+//CALLBACK
+
+function first() {
+    //Do something
+    setTimeOut(function() {
+        console.log(1);
+    }, 500);
+}
+
+function second() {
+    console.log(2);
+}
+
+first();
+second();
+
+function learnJS(lang, callback) {
+    console.log(`Я учу: ${lang}`);
+    callback();
+}
+
+function done() {
+    console.log('Я прошел этот урок!');
+}
+
+learnJS('JavaScript', done);
