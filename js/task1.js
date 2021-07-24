@@ -243,7 +243,7 @@ const obj = {
 console.log(copy);
 console.log(obj); */
 
-function copy(mainObj) {
+/* function copy(mainObj) {
     let objCopy = {};
 
     let key;
@@ -266,24 +266,24 @@ const numbers = {
 const newNumbers = copy(numbers); 
 
 newNumbers.a = 10;
-newNumbers.c.x = 10;
+newNumbers.c.x = 10; */
 
 /* console.log(newNumbers);
 console.log(numbers); */
 
-const add = {
+/* const add = {
     d: 17,
     e: 20
 };
 
 const clone = Object.assign({}, add);
 
-clone.d = 20;
+clone.d = 20; */
 
 /* console.log(add);
 console.log(clone); */
 
-const oldArray = ['a', 'b', 'c'];
+/* const oldArray = ['a', 'b', 'c'];
 const newArray = oldArray.slice();
 
 newArray[1] = 'asasaas';
@@ -315,4 +315,33 @@ const q = {
     two: 2
 };
 
-const newObj = {...g};
+const newObj = {...g}; */
+
+// ОСНОВЫ ООП ПРОТОТИП ОРИЕНТИРОВАННОЕ НАСЛЕДОВАНИЕ
+
+/* let str = "some";
+let strObj = new String(str); */
+
+/* console.log(typeof(str));
+console.log(typeof(strObj)); */
+
+/* const soldier = {
+    health: 400,
+    armor: 100,
+    sayHello: function() {
+        console.log("hello!"); 
+    }
+}; */
+
+//const john = Object.create(soldier);
+
+/* const john = {
+    health: 100
+}; */
+
+/* john.__proto__ = soldier; */
+
+//Object.setPrototypeOf(john, soldier);
+
+/* console.log(john.armor); */
+//john.sayHello()
